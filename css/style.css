@@ -1301,7 +1301,19 @@ input[type="text"] {
     display: inline-block;
   }
   
-  
+/*banners?*/
+.contact-banner-full {
+  width: 100vw; /* full viewport width */
+  height: 300px; /* adjust to your needs */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 30px; /* space below the banner */
+}
+.contact-banner-full.bottom-focus {
+  background-position: bottom center; /* Focus on the bottom part of the image */
+}
+
 
 #footer {
   padding: 3em 0;
