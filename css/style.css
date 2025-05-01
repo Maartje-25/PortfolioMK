@@ -1273,7 +1273,20 @@ input[type="text"] {
     height: 400px;        /* Set to whatever fixed height you want */
     object-fit: cover;    /* Ensures image fills the area without distortion */
   }
-  /* education section*/
+  /* footer center*/
+  #footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #f8f8f8; /* optional for better visual */
+    padding: 40px 0;
+  }
+  
+  #footer .container {
+    width: 100%;
+    max-width: 1200px;
+  }
+  
   
 
 #footer {
