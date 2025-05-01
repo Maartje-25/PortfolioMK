@@ -1077,7 +1077,7 @@ header {
   margin-bottom: 4em; }
 
 .col-pb-sm {
-  margin-bottom: 5em !important; }
+  margin-bottom: 3em !important; }
   .col-pb-sm:last-child {
     margin-bottom: 0; }
 
@@ -1268,6 +1268,11 @@ input[type="text"] {
   }
   
   /* new added by maartje*/
+  .about-img {
+    width: 100%;          /* Makes it responsive within its container */
+    height: 400px;        /* Set to whatever fixed height you want */
+    object-fit: cover;    /* Ensures image fills the area without distortion */
+  }
   
 
 #footer {
