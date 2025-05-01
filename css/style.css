@@ -1275,16 +1275,30 @@ input[type="text"] {
   }
   /* footer center*/
   #footer {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-color: #f8f8f8; /* optional for better visual */
-    padding: 40px 0;
+    background-color: #f8f8f8;
+    padding: 60px 0;
   }
   
   #footer .container {
-    width: 100%;
+    margin: 0 auto;
     max-width: 1200px;
+    padding: 0 20px;
+  }
+  
+  #footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #footer .col-md-4 {
+    margin-bottom: 30px;
+  }
+  
+  .colorlib-social-icons a {
+    margin: 0 10px;
+    display: inline-block;
   }
   
   
