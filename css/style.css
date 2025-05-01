@@ -1267,9 +1267,12 @@ input[type="text"] {
     transform: scale(1.2);
   }
   
+  /* new added by maartje*/
+  
 
 #footer {
-  padding: 8em 0;
+  padding: 3em 0;
+  background-color: #eaeff2;
   display: block;
   width: 100%; }
   #footer h2 {
