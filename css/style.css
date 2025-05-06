@@ -535,17 +535,17 @@ header {
   left: 7.5%; }
 
 .progress.blue .progress-bar {
-  border-color: #049dff; }
+  border-color: #b6b0f8; }
 
 .progress.blue .progress-value {
-  color: #049dff; }
+  color: #d5f6ac; }
 
 .progress.blue .progress-left .progress-bar {
   -webkit-animation: loading-2 1.5s linear forwards 1.8s;
   animation: loading-2 1.5s linear forwards 1.8s; }
 
 .progress.yellow .progress-bar {
-  border-color: #fdba04; }
+  border-color: #fbd367; }
 
 .progress.yellow .progress-value {
   color: #fdba04; }
@@ -555,7 +555,7 @@ header {
   animation: loading-3 1s linear forwards 1.8s; }
 
 .progress.pink .progress-bar {
-  border-color: #ed687c; }
+  border-color: #f3a8b3; }
 
 .progress.pink .progress-value {
   color: #ed687c; }
@@ -728,25 +728,31 @@ header {
         right: 0;
         bottom: 0;
         content: '';
-        background: rgba(0, 0, 0, 0.4);
+        background: rgba(206, 205, 205, 0.4);
         z-index: -1;
         opacity: 0;
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;
         transition: 0.3s; }
-      .work-entry .work-img .display-t .work-name {
-        display: inline-block;
-        padding: 4em 3em;
-        background: #fff;
-        -webkit-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
-        -moz-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
-        -ms-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
-        -o-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
-        box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
-        z-index: 1;
-        -webkit-transition: 0.3s;
-        -o-transition: 0.3s;
-        transition: 0.3s; }
+
+
+        /* the blocks on the pictures*/
+
+        .work-entry .work-img .display-t .work-name {
+          display: inline-block;
+          padding: 1.5em 2em; /* smaller on all sides */
+          background: #eef6eb;
+          -webkit-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
+          -moz-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
+          -ms-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
+          -o-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
+          box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
+          z-index: 1;
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s;
+        }
+        
         .work-entry .work-img .display-t .work-name h2 {
           margin: 0;
           -webkit-transition: 0.3s;
@@ -754,10 +760,17 @@ header {
           transition: 0.3s; }
     .work-entry .work-img:hover .display-t:after {
       opacity: 1; }
-    .work-entry .work-img:hover .display-t .work-name {
-      padding: 4.5em 3.5em; }
+
+      /* how we're going to change the dramatic hover part*/
+
+      .work-entry .work-img:hover .display-t .work-name {
+        padding: 2em 2.5em; /* smaller than original hover padding */
+      }
+      
       .work-entry .work-img:hover .display-t .work-name h2 {
-        font-size: 34px; }
+        font-size: 26px; /* or whatever looks balanced */
+      }
+      
     @media screen and (max-width: 768px) {
       .work-entry .work-img {
         height: 400px; }
@@ -780,6 +793,23 @@ header {
         width: 40px;
         height: 1px;
         background: #000; }
+
+/* what i added myself to make the white block smaller and centerd bottom*/
+
+        .work-entry .work-img .display-t .work-name {
+          position: absolute;
+          top: 75%; /* push it down (50% is center, so 60% is lower) */
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: inline-block;
+          padding: 1.5em 2em;
+          background: #eef6eb;
+          box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
+          z-index: 1;
+          transition: 0.3s;
+        }
+        
+
 
 #colorlib-blog .owl-carousel {
   z-index: 0; }
